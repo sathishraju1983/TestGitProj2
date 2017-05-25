@@ -1,5 +1,6 @@
 apply plugin :'java'
-group = 'BankApp'
+apply plugin: 'sonar-runner' 
+group = 'BankApplicationUsingGradle'
 version = '0.0.1-SNAPSHOT'
 
 //apply plugin : 'application'
@@ -9,7 +10,7 @@ version = '0.0.1-SNAPSHOT'
 
 
 
-apply plugin: 'sonar-runner'
+
 //repositories
 //{
   // maven
@@ -25,7 +26,7 @@ dependencies {
 }
 sonarRunner {
  sonarProperties {
-  property "sonar.projectName", "bankapp"
+  property "sonar.projectName", "BankApplicationUsingGradle"
   property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
  }
 }
